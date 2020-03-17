@@ -39,7 +39,7 @@ class AuthDialog(QDialog):
     def submitLogin(self):
         self.user_id=self.lineEdit1.text()
         self.user_pw=self.lineEdit2.text()
-        print(self.user_id, self.user_pw)
+        #print(self.user_id, self.user_pw)
 
         if self.user_id is None or self.user_id=='' or not self.user_id:
             QMessageBox.about(self,"인증오류","ID를 입력하세요")
